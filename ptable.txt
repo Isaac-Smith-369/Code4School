@@ -1,0 +1,12 @@
+--------------- P ---------------
+ | 3	 | RBBMQBHC	 | 6
+ | 7	 | ZOWKKYHIDD	 | 0
+ | 2	 | DXRJMOWFR	 | 0
+ | 6	 | BLDBEFSAR	 | 1
+ | 0	 | NECDYGGXX	 | 3
+ | 5	 | ORELLNMPAP	 | 4
+ | 4	 | KHOPKMCOQ	 | 7
+ | 1	 | KUEWHSQMGB	 | 4
+ | 8	 | JIVSWMDK	 | 7
+ | 9	 | MVTRRBLJPT	 | 4
+

@@ -1,0 +1,36 @@
+--------------- P ---------------
+ | 3	 | RBBMQBHC	 | 6
+ | 7	 | ZOWKKYHIDD	 | 0
+ | 2	 | DXRJMOWFR	 | 0
+ | 6	 | BLDBEFSAR	 | 1
+ | 0	 | NECDYGGXX	 | 3
+ | 5	 | ORELLNMPAP	 | 4
+ | 4	 | KHOPKMCOQ	 | 7
+ | 1	 | KUEWHSQMGB	 | 4
+ | 8	 | JIVSWMDK	 | 7
+ | 9	 | MVTRRBLJPT	 | 4
+
+--------------- S ---------------
+ | 7	 | 6	 | 7
+ | 5	 | 6	 | 3
+ | 9	 | 3	 | 6
+ | 1	 | 8	 | 4
+ | 3	 | 9	 | 2
+ | 8	 | 0	 | 9
+ | 0	 | 5	 | 8
+ | 3	 | 6	 | 9
+ | 6	 | 5	 | 8
+ | 5	 | 1	 | 1
+
+--------------- I ---------------
+ | 8	 | Apple	 | 9
+ | 8	 | Banana	 | 4
+ | 0	 | Cherry	 | 1
+ | 0	 | Durian	 | 3
+ | 4	 | Elderberry	 | 4
+ | 4	 | Fig	 | 4
+ | 6	 | Grape	 | 7
+ | 1	 | Juniper Berry	 | 3
+ | 5	 | Kiwi	 | 7
+ | 6	 | Lychee	 | 9
+

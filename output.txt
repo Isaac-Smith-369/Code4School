@@ -1,0 +1,12 @@
+--------------- I ---------------
+ | 8	 | Apple	 | 9
+ | 8	 | Banana	 | 4
+ | 0	 | Cherry	 | 1
+ | 0	 | Durian	 | 3
+ | 4	 | Elderberry	 | 4
+ | 4	 | Fig	 | 4
+ | 6	 | Grape	 | 7
+ | 1	 | Juniper Berry	 | 3
+ | 5	 | Kiwi	 | 7
+ | 6	 | Lychee	 | 9
+
