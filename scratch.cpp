@@ -53,12 +53,14 @@ template <typename T1, typename T2, typename T3> struct Table {
     std::cout << str << std::endl;
   }
 
+  void exportToCSV(std::string name) {}
+
   // Write tables to a file
   bool save(std::string fName = "tables", bool append = false) {
     std::ofstream doc;
     std::string file = fName + ".txt";
 
-    // Append the table to an existin file or create a new file and add the
+    // Append the table to an existing file or create a new file and add the
     // table
     if (append) {
       doc.open(file, std::ios::app);
@@ -268,9 +270,6 @@ int main() {
   sales1.generateSalesTable(store2);
   sales2.generateSalesTable(store2);
   sales3.generateSalesTable(store3);
-  //   sales2.printSalesTable();
-  //   sales2.simulatePurchase(store2);
-  //   sales2.printSalesTable();
 
   bool exit = false;
   while (!exit) {
@@ -289,7 +288,7 @@ int main() {
     std::cout << "12. Show Total Sales For All Stores\n";
     std::cout << "99. Exit\n";
 
-    // GEt user's choice
+    // Get user's choice
     int choice;
     std::cout << ">> ";
     std::cin >> choice;
