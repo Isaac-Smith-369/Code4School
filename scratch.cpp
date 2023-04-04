@@ -53,12 +53,31 @@ template <typename T1, typename T2, typename T3> struct Table {
     std::cout << str << std::endl;
   }
 
-  void exportToCSV(std::string name) {}
+  std::string toCSV() {
+    std::stringstream out;
+    out << "col 1, col 2, col 3"
+        << "\n";
+    for (Row<T1, T2, T3> row : table) {
+      out << row.c1 << ", ";
+      out << row.c2 << ", ";
+      out << row.c3;
+      out << "\n";
+    }
+    out << "\n";
+    std::string res = out.str();
+    return res;
+  }
 
   // Write tables to a file
-  bool save(std::string fName = "tables", bool append = false) {
+  bool save(std::string fName = "tables", bool csv = false,
+            bool append = false) {
     std::ofstream doc;
-    std::string file = fName + ".txt";
+    std::string file;
+    if (csv) {
+      file = fName + ".csv";
+    } else {
+      file = fName + ".txt";
+    }
 
     // Append the table to an existing file or create a new file and add the
     // table
@@ -73,7 +92,11 @@ template <typename T1, typename T2, typename T3> struct Table {
       return false;
     }
 
-    doc << toString();
+    if (csv) {
+      doc << toCSV();
+    } else {
+      doc << toString();
+    }
     doc.close();
     return true;
   }
@@ -331,13 +354,13 @@ int main() {
 
       std::cout << "Saving table in " << name << ".txt\n";
       if (choice2 == 'p') {
-        customers.save(name);
+        customers.save(name, true);
       } else if (choice2 == 's') {
         for (auto store : stores) {
-          store.save(name, true);
+          store.save(name, true, true);
         }
       } else if (choice2 == 'i') {
-        items.save(name);
+        items.save(name, true);
       } else {
         std::cout << "Please select either p, s, or i to save.\n";
       }
@@ -348,11 +371,11 @@ int main() {
       std::cout << "Please provide a name for your file: ";
       std::cin >> name;
       std::cout << "Saving all tables in " << name << ".txt\n";
-      customers.save(name, true);
+      customers.save(name, true, true);
       for (auto store : stores) {
-        store.save(name, true);
+        store.save(name, true, true);
       }
-      items.save(name, true);
+      items.save(name, true, true);
       break;
     }
     case 5: {
