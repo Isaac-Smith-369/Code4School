@@ -1,3 +1,5 @@
+#include <cstdlib>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -244,6 +246,8 @@ std::string getRandomLetters(std::tuple<int, int> range, bool upCase = true) {
 }
 
 int main() {
+  srand(time(0));
+
   // Create first table (int, string, int)
   Table<int, std::string, int> customers("Customers");
   int genNums[10] = {0};
